@@ -1,0 +1,152 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-size: 13px;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+h2 {
+    padding: 10px 0;
+    clear: both;
+    font-size: 17px;
+}
+
+.sub-title, p, h4 {
+    margin: 0;
+}
+
+.container {
+    margin: 60px auto 0;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    column-gap: 17px;
+    row-gap: 12px;
+}
+
+.grid-item {
+    text-align: left;
+    align-self: start;
+    padding:20px 31px 31px;
+    box-shadow: 2px 2px 10px;
+}
+
+Img {
+    margin-right: 20px;
+    float: left;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.daniel, .patrick {
+    color: white;
+    border: 2px solid hsl(264, 70%, 68%);
+}
+
+.jonathan {
+    border: 2px solid hsl(218, 41%, 66%);;
+}
+
+.persona {
+    margin-top: 0px;
+    float: left;
+    font-size: 12px;
+}
+
+h2 ~ p {
+    opacity: 70%;
+}
+
+.persona p {
+    opacity: 40%;
+
+}
+
+
+
+.item1 {
+    background-color:hsl(263, 55%, 52%);
+    background-image:url("images/bg-pattern-quotation.svg") ;
+    background-repeat: no-repeat;
+    background-position: 80% 0%;
+    grid-column: 1 / 3;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(263, 54%, 44%);
+    border-radius: 10px;
+}
+
+
+.item2 {
+    background-color: hsl(217, 19%, 35%);
+    grid-column: 3 / 4;
+    border-color: hsl(218, 27%, 29%);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.item3 h2 {
+    padding-right: 30px;
+}
+
+.item3 {
+    color: hsl(217, 19%, 35%);
+    background-color: white;
+    grid-column: 1 / 2;
+    grid-row: 2;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.item4 {
+    background-color: hsl(219, 29%, 14%);
+    grid-column: 2 / 4;
+    grid-row: 2 ;
+    border-color: hsl(217, 37%, 11%);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.item5 {
+    color: hsl(217, 19%, 35%);;
+    border-color: white;
+    background-color: white;
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.attribution {
+    margin: 20px auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        display: block;
+        
+    }
+    .grid-item {
+        margin-bottom: 20px;
+        grid-template-columns: none;
+        grid-template-rows: none;
+    }
+    .content-wrapper {
+        /* margin: 100px 0; */
+    }
+
+    .attribution {
+        text-align: center;
+        margin: 50px auto;
+        width: 330px;
+        padding-bottom: 50px;
+        
+    }
+}
